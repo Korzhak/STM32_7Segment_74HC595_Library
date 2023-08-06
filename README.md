@@ -6,7 +6,7 @@ This library is STM32 implementation of [DIYables_4Digit7Segment_74HC595](https:
 
 ## How to use:
 
-![CubeMX Configurations](img\screenshot_1.png "CubeMX Configurations")
+![CubeMX Configurations](img/screenshot_1.png "CubeMX Configurations")
 
 1. Configure your `SYS (Debug->Serial Wire)` and `RCC (HSE->Crystal/Ceramic Resonator)`
 2. Instead of SPI I use just GPIO pins, because I need SPI for another sensor. So, we need to configure GPIO:
@@ -123,5 +123,5 @@ int main(void)
 ```
 | INT result          | FLOAT result            | Symbols result               |
 |---------------------|-------------------------|------------------------------|
-| ![int](img\int.jpg) | ![float](img\float.jpg) | ![temperature](img\temp.jpg) |
+| ![int](img/int.jpg) | ![float](img/float.jpg) | ![temperature](img/temp.jpg) |
 |                     |                         |                              |
