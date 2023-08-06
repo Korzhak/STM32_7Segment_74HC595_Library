@@ -1,4 +1,4 @@
-# STM32 library for 4 digits 7 segment indicator with 74HC595 shift register
+# STM32 library for 4 digits 7 segments indicators with 74HC595 shift register
 
 This library is STM32 implementation of [DIYables_4Digit7Segment_74HC595](https://github.com/DIYables/DIYables_4Digit7Segment_74HC595/) Arduino library. 
 
@@ -29,7 +29,7 @@ This library is STM32 implementation of [DIYables_4Digit7Segment_74HC595](https:
 /* USER CODE BEGIN PV */
 
 // MAKE LED Structure
-LED74HC595 ledObj;
+LED74HC595 ledStruct;
 
 /* USER CODE END PV */
 // ... 
@@ -45,8 +45,8 @@ int main(void)
     /* USER CODE BEGIN 2 */
     
     // SETTING UP OF LIBRARY
-    //               SCLK PIN   SCLK Port   RCLK PIN   RCLK Port   DIO PIN   DIO PORT
-    setUp(&ledObj, GPIO_PIN_11,  GPIOA,    GPIO_PIN_10,  GPIOA,   GPIO_PIN_9,  GPIOA);
+    //                 SCLK PIN   SCLK Port   RCLK PIN   RCLK Port   DIO PIN   DIO PORT
+    setUp(&ledStruct, GPIO_PIN_11,  GPIOA,    GPIO_PIN_10,  GPIOA,   GPIO_PIN_9,  GPIOA);
     
     /* USER CODE END 2 */
 ```
@@ -59,7 +59,7 @@ int main(void)
     while (1)
     { 
         // PRINT INT NUMBERS
-        //         NUMBER  ZERO PADDING
+        //       NUMBER  ZERO PADDING
         printInt( 195,     false);
         loop();
         /* USER CODE END WHILE */
