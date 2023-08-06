@@ -106,12 +106,12 @@ int main(void)
     { 
         // PRINT 9.3°C TEMPERATURE
         clear();
-	    setNumber(1, 9);              // set 9 at the 1st digit
-	    setDot(1);                    // set . at the 1st digit
-	    setNumber(2, 3);              // set 3 at the 2nd digit
-	    setChar(3, __DEGREE); // set ° at the 3rd digit
-	    setChar(4, __C);      // set C at the 3rd digit
-	    show();            
+        setNumber(1, 9);              // set 9 at the 1st digit
+        setDot(1);                    // set . at the 1st digit
+        setNumber(2, 3);              // set 3 at the 2nd digit
+        setChar(3, __DEGREE);         // set ° at the 3rd digit
+        setChar(4, __C);              // set C at the 4th digit
+        show();            
         loop();
         /* USER CODE END WHILE */
 
